@@ -25,12 +25,12 @@ class WildlifeMonitor:
         self.alerts = []
         
         # Configure Gemini API
-        genai.configure(api_key="AIzaSyB6HmatqjAyJdhhrBftJyq-OjdA5P5xiXU")
+        genai.configure(api_key="your api key")
 
     def send_email_alert(self, recipient_email, alert):
         """Send an email alert to the registered user."""
-        sender_email = "monitorwildlife@gmail.com"
-        sender_password = "jhdfvabdbkcbhobg"  # Use environment variables instead!
+        sender_email = "your mail@example.com"
+        sender_password = "password"  # Use environment variables instead!
         import json
 
         subject = "Wildlife Alert Notification"
@@ -164,7 +164,7 @@ class WildlifeMonitor:
         self.alerts.append(alert)
 
         # Send alert email
-        self.send_email_alert("mariyarose7777@gmail.com", alert)
+        self.send_email_alert("recipientmail@example.com", alert)
 
         return alert
 
